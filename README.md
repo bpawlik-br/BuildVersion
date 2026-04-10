@@ -3,9 +3,9 @@
 **This is a fork of [br-na-pm/BuildVersion](https://github.com/br-na-pm/BuildVersion)**
 
 [![Made for B&R](https://raw.githubusercontent.com/hilch/BandR-badges/dfd5e264d7d2dd369fd37449605673f779db437d/Made-For-BrAutomation.svg)](https://www.br-automation.com)
-![GitHub License](https://img.shields.io/github/license/bpawlik/br-automation)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/bpawlik/br-automation/total)
-[![GitHub issues](https://img.shields.io/github/issues-raw/bpawlik/br-automation)](https://github.com/bpawlik/br-automation/issues)
+![GitHub License](https://img.shields.io/github/license/bpawlik-br/BuildVersion)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/bpawlik-br/BuildVersion/total)
+[![GitHub issues](https://img.shields.io/github/issues-raw/bpawlik-br/BuildVersion)](https://github.com/bpawlik-br/BuildVersion/issues)
 
 [BuildVersion](https://github.com/br-na-pm/BuildVersion#readme) is a software package for [Automation Studio](https://www.br-automation.com/en/products/software/automation-software/automation-studio/) projects to transfer version information to runtime variables during each build.
 
@@ -126,11 +126,8 @@ Prior to Automation Studio 4.11, it is possible to suppress *all* build warnings
 ## Changes Log
 
 ### 2026-04-10T08:06:39Z - Fork Badge References Updated
-**Modified by:** Copilot
-- Updated all GitHub badge references from `br-na-pm/BuildVersion` to `bpawlik/br-automation`
 - Added explicit fork attribution with link to original repository
-- Badge changes:
-  - License badge: `br-na-pm/BuildVersion` → `bpawlik/br-automation`
-  - Downloads badge: `br-na-pm/BuildVersion` → `bpawlik/br-automation`
-  - Issues badge: `br-na-pm/BuildVersion` → `bpawlik/br-automation`
-- Original repository remains referenced: https://github.com/br-na-pm/BuildVersion
+- Added BuildTimeUTC
+- Changed logging scheme to -> describe (branch, clean/dirty, buildtimeutc)
+- Log is added also during runtime after online installation
+- Added MpAlarmXSet to indicate software changes
