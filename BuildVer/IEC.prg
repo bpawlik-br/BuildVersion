@@ -8,5 +8,6 @@
     <File Private="true">LocalFunctions.fun</File>
     <File>DT_TO_ISO.st</File>
     <File Description="Local variables" Private="true">Variables.var</File>
+	<File Description="Ignore Variables.var">.gitignore</File>
   </Files>
 </Program>

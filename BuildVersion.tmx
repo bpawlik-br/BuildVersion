@@ -5,12 +5,12 @@
     <prop type="x-BR-TS:Namespace">User/EventLog</prop>
   </header>
   <body>
-    <tu tuid="-1584388336">
+    <tu tuid="-1636837136">
       <tuv xml:lang="en">
         <seg>Version info</seg>
       </tuv>
     </tu>
-    <tu tuid="1584388336">
+    <tu tuid="1636837136">
       <tuv xml:lang="en">
         <seg>Version info</seg>
       </tuv>
