@@ -424,6 +424,7 @@ StringTruncate ([Ref]$GitUserEmail)
 # Project information
 ################################################################################
 $BuildDate = Get-Date -Format "yyyy-MM-dd-HH:mm:ss"
+$BuildDateUTC = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd-HH:mm:ss")
 
 StringTruncate ([Ref]$StudioVersion)
 StringTruncate ([Ref]$UserName)
@@ -449,7 +450,7 @@ $ScriptInitialization = "BuiltWithGit:=$BuiltWithGit"
 
 $GitInitialization = "URL:='$Url',Branch:='$Branch',Tag:='$Tag',AdditionalCommits:=$AdditionalCommits,Version:='$Version',Sha1:='$Sha1',Describe:='$Describe',UncommittedChanges:='$UncommittedChanges',ChangeWarning:=$ChangeWarning,UserName:='$GitUserName',UserEmail:='$GitUserEmail',CommitDate:=DT#$CommitDate,CommitAuthorName:='$CommitAuthorName',CommitAuthorEmail:='$CommitAuthorEmail'"
 
-$ProjectInitialization = "ASVersion:='$StudioVersion',UserName:='$UserName',ProjectName:='$ProjectName',Configuration:='$Configuration',BuildMode:='$BuildMode',BuildDate:=DT#$BuildDate"
+$ProjectInitialization = "ASVersion:='$StudioVersion',UserName:='$UserName',ProjectName:='$ProjectName',Configuration:='$Configuration',BuildMode:='$BuildMode',BuildDate:=DT#$BuildDate,BuildDateUTC:=DT#$BuildDateUTC"
 
 ################################################################################
 # Global declaration

@@ -31,5 +31,6 @@ TYPE
 		Configuration : STRING[80]; (*From $(AS_CONFIGURATION)*)
 		BuildMode : STRING[80]; (*From $(AS_BUILD_MODE), see help for possible values - Build, Rebuild, BuildAndTransfer, ...*)
 		BuildDate : DATE_AND_TIME; (*Local timestamp grabbed by powershell on build*)
+		BuildDateUTC : DATE_AND_TIME; (*UTC timestamp grabbed by powershell on build*)
 	END_STRUCT;
 END_TYPE

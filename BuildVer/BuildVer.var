@@ -1,0 +1,12 @@
+VAR
+	GetLogbookIdent : ArEventLogGetIdent;
+	WriteToLogbook : ArEventLogWrite;
+	Message : STRING[121];
+END_VAR
+VAR RETAIN
+	_Revision : STRING[80];
+	_BuildDate : DATE_AND_TIME;
+END_VAR
+VAR
+	sBuildDate : STRING[80];
+END_VAR
